@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "email": "cp .env ./node_modules/react-email && email dev --dir src/email --port 3001"
   },
   "dependencies": {
     "@prisma/client": "^5.13.0",
@@ -21,6 +22,8 @@
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-email": "^2.1.1",
+    "resend": "^3.2.0",
     "stripe": "^15.4.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
